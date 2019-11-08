@@ -13,3 +13,4 @@ RUN conda install cython -y && conda clean --all
 RUN git clone https://github.com/open-mmlab/mmdetection.git /mmdetection
 WORKDIR /mmdetection
 RUN pip install --no-cache-dir -e .
+RUN pip install --no-cache-dir flask
